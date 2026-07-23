@@ -1,0 +1,125 @@
+/* =========================
+   ABOUT — STORY
+   ========================= */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.story-copy p { color: #55493A; margin-bottom: 16px; }
+
+.story-visual {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.story-visual span {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  background: var(--white);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+}
+
+/* =========================
+   TIMELINE
+   ========================= */
+.timeline { border-left: 2px dashed var(--line); margin-left: 10px; }
+.timeline-item { position: relative; padding: 0 0 40px 32px; }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -7px; top: 4px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--chili);
+  border: 2px solid var(--ivory);
+}
+.timeline-item .year {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--chili);
+  text-transform: uppercase;
+}
+.timeline-item h3 { margin: 6px 0 6px; font-size: 1.15rem; }
+.timeline-item p { color: #6B5E4C; font-size: 0.92rem; max-width: 56ch; }
+
+/* =========================
+   TEAM
+   ========================= */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+.team-card {
+  text-align: center;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+}
+.team-avatar {
+  width: 76px; height: 76px;
+  border-radius: 50%;
+  background: var(--paper);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 14px;
+}
+.team-card h3 { font-size: 1.02rem; }
+.team-card span { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; color: var(--chili); }
+.team-card p { font-size: 0.85rem; color: #6B5E4C; margin-top: 10px; }
+
+/* =========================
+   CONTACT
+   ========================= */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-form-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+}
+.contact-form-card h2 { margin-bottom: 6px; }
+.contact-form-card > p { color: #6B5E4C; margin-bottom: 24px; font-size: 0.92rem; }
+
+.contact-info-list { display: flex; flex-direction: column; gap: 22px; margin-bottom: 32px; }
+.contact-info-item { display: flex; gap: 16px; align-items: flex-start; }
+.contact-info-item .icon {
+  width: 44px; height: 44px;
+  background: var(--paper);
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.contact-info-item h4 { font-size: 0.95rem; margin-bottom: 4px; }
+.contact-info-item p { font-size: 0.88rem; color: #6B5E4C; }
+
+.map-frame {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 260px;
+}
+.map-frame iframe { width: 100%; height: 100%; border: 0; }
+
+@media (max-width: 900px) {
+  .story-grid, .contact-layout { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+}

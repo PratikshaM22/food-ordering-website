@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart — Mirchi & Co.</title>
+<meta name="description" content="Review your order ticket and check out from Mirchi & Co.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap">
+    <a href="index.html" class="logo">Mirchi <span>&amp; Co.</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html" class="cart-link" aria-current="page">🧾 Cart <span class="cart-badge">3</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Ticket #0148</span>
+    <h1>Your Cart</h1>
+    <p>Everything below is a sample ticket for demo purposes — this page shows the checkout experience without live payment processing.</p>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="cart-layout">
+
+    <div>
+      <div class="cart-items">
+        <div class="cart-item">
+          <div class="cart-item-icon">🌶️</div>
+          <div>
+            <div class="cart-item-name">Chilli Garlic Vada Pav</div>
+            <div class="cart-item-meta">Extra chutney · Spice 4/5</div>
+          </div>
+          <div class="qty-control">
+            <button type="button" aria-label="Decrease quantity">−</button>
+            <span>2</span>
+            <button type="button" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="cart-item-price">₹120</div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item-icon">🍢</div>
+          <div>
+            <div class="cart-item-name">Tandoori Mushroom Skewer</div>
+            <div class="cart-item-meta">Medium spice</div>
+          </div>
+          <div class="qty-control">
+            <button type="button" aria-label="Decrease quantity">−</button>
+            <span>1</span>
+            <button type="button" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="cart-item-price">₹180</div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item-icon">🥤</div>
+          <div>
+            <div class="cart-item-name">Masala Chaas</div>
+            <div class="cart-item-meta">No sugar</div>
+          </div>
+          <div class="qty-control">
+            <button type="button" aria-label="Decrease quantity">−</button>
+            <span>2</span>
+            <button type="button" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="cart-item-price">₹90</div>
+        </div>
+      </div>
+
+      <p class="empty-cart-note" style="margin-top:16px;">Want to add more? <a href="menu.html" style="color:var(--chili); font-weight:600;">Back to the full menu →</a></p>
+
+      <!-- CHECKOUT FORM -->
+      <div class="checkout-form">
+        <h3>Delivery Details</h3>
+        <form>
+          <div class="form-grid-2">
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your name">
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="10-digit mobile number">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="address">Delivery Address</label>
+            <textarea id="address" rows="3" placeholder="House no., street, landmark"></textarea>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-row">
+              <label for="city">City</label>
+              <input type="text" id="city" value="Karjat, Maharashtra">
+            </div>
+            <div class="form-row">
+              <label for="payment">Payment Method</label>
+              <select id="payment">
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit / Debit Card</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- RECEIPT SUMMARY -->
+    <aside class="receipt">
+      <h2>Order Summary</h2>
+      <span class="receipt-sub">Ticket #0148 · Mirchi &amp; Co.</span>
+
+      <div class="receipt-line"><span>Chilli Garlic Vada Pav x2</span><span>₹120</span></div>
+      <div class="receipt-line"><span>Tandoori Mushroom Skewer x1</span><span>₹180</span></div>
+      <div class="receipt-line"><span>Masala Chaas x2</span><span>₹90</span></div>
+      <div class="receipt-line"><span>Delivery Fee</span><span>₹0</span></div>
+      <div class="receipt-line"><span>Taxes (5%)</span><span>₹19.50</span></div>
+      <div class="receipt-line total"><span>Total</span><span>₹409.50</span></div>
+
+      <div class="promo-row">
+        <input type="text" placeholder="Promo code">
+        <button class="btn btn-outline" type="button">Apply</button>
+      </div>
+
+      <a href="contact.html" class="btn btn-primary">Place Order</a>
+      <p class="receipt-note">This is a static demo — no real order will be placed.</p>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Mirchi & Co.</h4>
+        <p>Home-style Indian street food, cooked to order and delivered hot. Karjat, Maharashtra.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Full Menu</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact & Location</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon–Fri: 11am – 11pm</li>
+          <li>Sat–Sun: 10am – 12am</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mirchi & Co. Student training project — not a real ordering system.</span>
+      <div class="social-row">
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Zomato</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
