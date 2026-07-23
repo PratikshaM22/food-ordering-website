@@ -1,11 +1,15 @@
-# food-ordering-website
-A front-end food ordering website UI built with HTML &amp; CSS — featuring a homepage, full menu, cart/checkout page, about, and contact page. Built as a training project
+# Mirchi & Co. — Food Ordering Website
 
-🔗 Live Demo
+A front-end-only food ordering website built with **HTML & CSS** as part of a training / final project. It simulates the experience of browsing a menu, adding items to a cart, and checking out — without any backend or real order processing.
 
-[view live site](https://pratiksham22.github.io/food-ordering-website/)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
-📄 Pages
+## 🔗 Live Demo
+
+[Add your GitHub Pages link here once deployed — e.g. https://yourusername.github.io/mirchi-food-ordering/]
+
+## 📄 Pages
 
 | Page | Description |
 |---|---|
@@ -15,7 +19,7 @@ A front-end food ordering website UI built with HTML &amp; CSS — featuring a h
 | `about.html` | Brand story, milestones timeline, and team section |
 | `contact.html` | Contact form, business info, and embedded map |
 
-🛠️ Tech Used
+## 🛠️ Tech Used
 
 - **HTML5** — semantic structure across 5 linked pages
 - **CSS3**
@@ -25,7 +29,7 @@ A front-end food ordering website UI built with HTML &amp; CSS — featuring a h
   - Transitions & keyframe animation
   - Mobile navigation menu using the checkbox-hack (no JavaScript)
 
-📁 Project Structure
+## 📁 Project Structure
 
 ```
 mirchi-food-ordering/
@@ -46,11 +50,11 @@ mirchi-food-ordering/
 └── images/
 ```
 
-⚠️ Note
+## ⚠️ Note
 
 This is a **UI/front-end demo only**. The "Add to Cart," "Checkout," and contact form buttons are styled for demonstration purposes — there is no backend, database, or real payment processing behind them.
 
-🎓 About This Project
+## 🎓 About This Project
 
 Built as a training/final project to practice:
 - Multi-page site structure and navigation
@@ -58,6 +62,6 @@ Built as a training/final project to practice:
 - A cohesive visual design system using CSS variables
 - Semantic, accessible HTML
 
-📜 License
+## 📜 License
 
 This project is for educational purposes.
