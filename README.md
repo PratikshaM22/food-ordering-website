@@ -7,7 +7,7 @@ A front-end-only food ordering website built with **HTML & CSS** as part of a tr
 
 ## 🔗 Live Demo
 
-[Add your GitHub Pages link here once deployed — e.g. https://yourusername.github.io/mirchi-food-ordering/]
+[view live site](https://pratiksham22.github.io/food-ordering-website/)
 
 ## 📄 Pages
 
